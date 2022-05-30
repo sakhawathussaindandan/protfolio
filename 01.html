@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="01.css">
+    <title>Project_01</title>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="#">System Setup</a></li>
+        <li><a href="#">Scorecard</a></li>
+        <li><a href="#">Admin</a></li>
+        <li><a href="#">Password Reset</a></li>
+        <li style="float:right"><a class="active1" href="#">Pakistan: + 92 21 111 123 456 | UAE: + 971 600565651 | UK:
+                +(44) 208 8495600</a></li>
+    </ul>
+
+    <div class="dropdown">
+        <button class="dropbtn">Courier & Logistics System</button>
+        <div class="dorpdown-content">
+            <a href="#">Out-Bound Activities</a>
+            <a href="#">In-bound Activities</a>
+            <a href="#">Reports</a>
+            <a href="#">Shipment Tracking</a>
+            <a href="#">Shipment Tracking</a>
+            <a href="#">Unblock Employee ( COD )</a>
+            <a href="#">Inbound Operational Disorder</a>
+            <a href="#">Shipment Tracking CLS</a>
+            <a href="#">COD Cash Receiving Performa</a>
+            <a href="#">Manifest Phase II ( Manual Booking )</a>
+            <a href="#">Pickup Management</a>
+            <a href="#">Employee Opening Form</a>
+            <a href="#">Reset Password</a>
+            <a href="#">Consignment Serial Setup Form</a>
+            <a href="#">Delivery Status Update</a>
+            <a href="#">Alternate Route Setup</a>
+            <a href="#">Aircraft Manifest Receipt</a>
+            <a href="#">COD Shipment Searching</a>
+            <a href="#">Hazir Charges</a>
+            <a href="#">Customer Profile View</a>
+            <a href="#">COD CDF Correction</a>
+            <a href="#">Employee Profile View</a>
+            <a href="#">Courier Departure</a>
+            <a href="#">Data Load ref</a>
+            <a href="#">Bulk Booking</a>
+            <a href="#">COD Cash Receiving</a>
+            <a href="#">Delivery Sheet EDM Flag Null</a>
+            <a href="#">Weight Chart</a>
+            <a href="#">Time Choice Delivery</a>
+        </div>
+    </div>
+
+    <br><br>
+    <!-- image slider  -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="2.jpg" style="width:100%">
+            <div class="text">TCS Pvt Ltd</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="3.jpg" style="width:100%">
+            <div class="text">TCS Pvt Ltd</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="4.jpg" style="width:100%">
+            <div class="text">TCS Pvt Ltd</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <br><br>
+
+    <div class="container">
+        <br>
+        <button class="btnn">Track Your Shipment</button> <br><br>
+        <p>Enter any combination of TCS tracking Reference number (one per line.
+        </p><br>
+        <input type="number" class="input1">
+        <button class="btnn1">TRACK</button>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

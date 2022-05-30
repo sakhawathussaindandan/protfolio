@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    padding           : 0;
+    margin            : 0;
+    text-decoration   : none;
+    /* list-style     : none; */
+    /* box-sizing     : border-box; */
+}
+
+body {
+    font-family: montserrat;
+}
+
+nav {
+    /* background: #0082e6; */
+    height     : 80px;
+    width      : 100%;
+    font-weight: 900;
+}
+
+label.logo {
+    font-family: 'Ubuntu', sans-serif;
+    color      : rgba(230, 19, 212);
+    font-size  : 35px;
+    line-height: 80px;
+    padding    : 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float       : right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display    : inline-block;
+    line-height: 80px;
+    margin     : 0 5px;
+}
+
+nav ul li a {
+    font-family   : 'Ubuntu', sans-serif;
+    color         : rgba(230, 19, 212);
+    font-size     : 17px;
+    padding       : 7px 13px;
+    border-radius : 3px;
+    text-transform: uppercase;
+}
+
+
+a:hover {
+    background: #1b9bff;
+    transition: .5s;
+    color     : white;
+}
+
+.checkbtn {
+    font-size   : 30px;
+    color       : black;
+    float       : right;
+    line-height : 80px;
+    margin-right: 40px;
+    cursor      : pointer;
+    display     : none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size   : 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position  : fixed;
+        width     : 100%;
+        height    : 100vh;
+        background: #2e76be;
+        top       : 80px;
+        left      : -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display    : block;
+        margin     : 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover {
+        background: none;
+        color     : #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+td img {
+    display     : block;
+    margin-left : auto;
+    margin-right: auto;
+}
+
+.parent_container {
+    width                   : 100vw;
+    height                  : 100vh;
+    /* background           : #2e76be; */
+    position                : relative;
+    background-image        : url(https://cdn.pixabay.com/photo/2016/10/10/11/09/field-1728099__340.jpg);
+    background-size         : cover;
+    background-attachment   : fixed;
+}
+
+.child_container {
+    width              : 50vw;
+    height             : 50vh;
+    /* background-color: #0082e6; */
+    position           : absolute;
+    left               : 50%;
+    top                : 50%;
+    transform          : translate(-50%, -50%);
+    color              : rgba(230, 19, 212);
+}
+
+.imgg {
+    display: flex;
+    width  : 80%;
+    height : 90%;
+}
+
+
+.section1 {
+    text-align: center;
+    padding   : 5%;
+    margin    : auto;
+
+}
+
+
+.section2 {
+    text-align      : center;
+    padding         : 10%;
+    margin          : auto;
+    background-color: black;
+    color           : white;
+
+
+}
+
+.btn {
+    background-color: rgb(7, 105, 224);
+    border          : none;
+    color           : white;
+    padding         : 12px;
+    font-weight     : 500;
+    border-radius   : 25px;
+    font-size       : 20px;
+    font-family     : 'Ubuntu', sans-serif;
+}
+
+
+.font-class {
+    font-family  : 'Ubuntu', sans-serif;
+    border       : none;
+    padding      : 5px;
+    border-radius: 15px;
+    font-size    : 50px;
+}
+
+
+.font-style {
+    font-family: 'Ubuntu', sans-serif;
+    text-align : center;
+}
+
+.item2 {
+    position : relative;
+    top      : auto;
+    left     : auto;
+    transform: translate(0%, 30%);
+}
+
+.container {
+    display        : flex;
+    justify-content: center;
+    text-align     : center;
+
+}
+
+img {
+    width : 70%;
+    height: 100%;
+}
+
+.btn:hover {
+    background-color: white;
+    color           : rgb(7, 105, 224);
+    border          : 2px solid rgb(7, 105, 224);
+    cursor          : pointer;
+}
+
+
+
+
+.flex-box1 {
+    display         : flex;
+    background-color: black;
+    color           : white;
+    justify-content : center;
+    padding         : 15px;
+    height          : 1100%;
+}
+
+.paragraph {
+    text-align: center;
+}
+
+.image-icon {
+    width : 50%;
+    height: 50%;
+}
+
+.item3,
+.item4,
+.item5 {
+    text-align: center;
+    display   : block;
+    margin    : auto;
+    width     : 50%;
+}
+/* footer */
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer01{
+	background: rgb(10, 9, 9);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer01 .footer-left,
+.footer01 .footer-center,
+.footer01 .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer01 .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer01 h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer01 h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer01 .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer01 .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer01 .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer01 .footer-center{
+	width: 35%;
+}
+
+.footer01 .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer01 .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer01 .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer01 .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer01 .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer01 .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer01 .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer01 .footer-right{
+	width: 20%;
+}
+
+.footer01 .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer01 .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer01 .footer-icons{
+	margin-top: 25px;
+}
+
+.footer01 .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer01{
+		font: bold 14px sans-serif;
+	}
+
+	.footer01 .footer-left,
+	.footer01 .footer-center,
+	.footer01 .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer01 .footer-center i{
+		margin-left: 0;
+	}
+
+}

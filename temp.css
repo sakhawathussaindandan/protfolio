@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+.font-style {
+    font-family: 'Ubuntu', sans-serif;
+    text-align : center;
+}
+
+.flex-box1 {
+    display         : flex;
+    background-color: black;
+    color           : white;
+    justify-content: center;
+    padding: 15px;
+}
+
+.paragraph{
+    text-align: center;
+}
+
+.image-icon{
+    width: 50%;
+    height: 50%;
+}
+
+.item3, .item4, .item5
+{
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
