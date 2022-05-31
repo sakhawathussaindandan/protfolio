@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+
+
 
 * {
     padding           : 0;
@@ -7,6 +13,12 @@
     text-decoration   : none;
     /* list-style     : none; */
     /* box-sizing     : border-box; */
+}
+
+
+body {
+    margin    : 0;
+    text-align: center;
 }
 
 body {
@@ -161,24 +173,6 @@ td img {
 }
 
 
-.section1 {
-    text-align: center;
-    padding   : 5%;
-    margin    : auto;
-
-}
-
-
-.section2 {
-    text-align      : center;
-    padding         : 10%;
-    margin          : auto;
-    background-color: black;
-    color           : white;
-
-
-}
-
 .btn {
     background-color: rgb(7, 105, 224);
     border          : none;
@@ -263,7 +257,6 @@ img {
 /* footer */
 
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
 * {
   font-family: Open Sans;
@@ -460,4 +453,42 @@ section {
 		margin-left: 0;
 	}
 
+}
+
+
+.skill-row {
+    width     : 50%;
+    text-align: left;
+    line-height: 2;
+    margin: 100px auto 100px auto;
+}
+
+.web-image {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+.database-image{
+    width: 25%;
+    float: right;
+    margin-left:30px ;
+}
+
+.wordpress-image{
+    width: 25%;
+    float: left;
+    margin-right:30px ;
+}
+
+
+.heading{
+    font-family: 'Ubuntu', sans-serif;
+    color:#3BACB6;
+}
+.para{
+    font-family: 'Nunito', sans-serif;
+}
+
+#head1{
+    font-size:50px;
 }
