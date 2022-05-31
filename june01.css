@@ -4,29 +4,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
-
-
-
 * {
     padding           : 0;
     margin            : 0;
     text-decoration   : none;
-    /* list-style     : none; */
-    /* box-sizing     : border-box; */
 }
 
 
 body {
     margin    : 0;
     text-align: center;
-}
-
-body {
     font-family: montserrat;
-}
 
+}
+/* NAVBAR CSS STYLES */
 nav {
-    /* background: #0082e6; */
     height     : 80px;
     width      : 100%;
     font-weight: 900;
@@ -129,6 +121,9 @@ a:hover {
     }
 }
 
+
+
+
 h1 {
     font-family: 'Dancing Script', cursive;
 
@@ -139,16 +134,10 @@ h3 {
 
 }
 
-td img {
-    display     : block;
-    margin-left : auto;
-    margin-right: auto;
-}
-
+/* home page */
 .parent_container {
     width                   : 100vw;
     height                  : 100vh;
-    /* background           : #2e76be; */
     position                : relative;
     background-image        : url(https://cdn.pixabay.com/photo/2016/10/10/11/09/field-1728099__340.jpg);
     background-size         : cover;
@@ -158,7 +147,6 @@ td img {
 .child_container {
     width              : 50vw;
     height             : 50vh;
-    /* background-color: #0082e6; */
     position           : absolute;
     left               : 50%;
     top                : 50%;
@@ -176,12 +164,15 @@ td img {
 .btn {
     background-color: rgb(7, 105, 224);
     border          : none;
+    text-decoration:none;
     color           : white;
     padding         : 12px;
     font-weight     : 500;
     border-radius   : 25px;
     font-size       : 20px;
     font-family     : 'Ubuntu', sans-serif;
+    float: left;
+
 }
 
 
@@ -201,8 +192,8 @@ td img {
 
 .item2 {
     position : relative;
-    top      : auto;
-    left     : auto;
+    top      : 0px;
+    /* left     : auto; */
     transform: translate(0%, 30%);
 }
 
@@ -218,11 +209,12 @@ img {
     height: 100%;
 }
 
-.btn:hover {
+.btn:hover{
     background-color: white;
     color           : rgb(7, 105, 224);
     border          : 2px solid rgb(7, 105, 224);
     cursor          : pointer;
+   
 }
 
 
@@ -455,7 +447,7 @@ section {
 
 }
 
-
+/* skills coloum css */
 .skill-row {
     width     : 50%;
     text-align: left;
