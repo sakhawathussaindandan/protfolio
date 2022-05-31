@@ -12,7 +12,7 @@
 <body>
 
 
-    <div class="parent_container">
+    <div class="parent_container" id="home">
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
@@ -20,11 +20,11 @@
             </label>
             <label class="logo">Protfolio</label>
             <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a class="#home" href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Feedback</a></li>
+                <li><a href="#skills">Skills</a></li>
             </ul>
         </nav>
         <div class="child_container">
@@ -42,8 +42,8 @@
         </div>
     </div>
     <br>
-    
-    <div class="section3">
+
+    <div class="section3" id="about">
         <h1 class="font-style">About Me</h1>
         <h3 class="font-style" style="color: red;">---who i am---</h3>
 
@@ -51,14 +51,18 @@
             <div class="item1"><img src="imag.jpg" alt=""></div>
             <div class="item2">
                 <h1 class="font-style" style="text-align: left;">I`m Sakhawat Hussain Dandan</h1>
-                <p style="text-align:left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Necessitatibus
+                <p style="text-align:left;   line-height:2;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Necessitatibus
                     saepe
                     tempore laudantium alias
                     neque quidem expedita debitis soluta quas <br> repellat esse tempora, sequi incidunt ut qui et optio
                     dolores
                     corrupti sunt. Iste molestiae tempore officia dolorem rem? Architecto quo iste reiciendis provident
                     natus dolorem voluptate quas voluptatum hic itaque? Saepe.</p>
-                <button class="btn" style="float:left">Download CV</button>
+                    <a href="SAKAHWAT.pdf" class="btn">Download!</a>
+                    
+              
+
+
             </div>
         </div>
     </div>
@@ -68,10 +72,10 @@
 
 
 
-    <h1 class="font-style" style="background-color: black;  color: white;">My Services</h1>
+    <h1 class="font-style" id="service" style="background-color: black;  color: white;">My Services</h1>
     <h3 class="font-style" style="color: red; background-color: black; padding: 10px;">--what i provide--</h3>
 
-    <div class="flex-box1">
+    <div class="flex-box1" >
         <div class="item3">
             <img class="image-icon" src="13.png" alt="">
             <h1 class="font-style">web Design</h1>
@@ -95,7 +99,7 @@
         </div>
     </div>
 
-    <div class="skills">
+    <div class="skills" id="skills">
         <h3 class="heading" id="head1">My Skills</h3>
         <div class="skill-row">
             <img src="web-development.png" alt="" class="web-image">
@@ -130,18 +134,16 @@
             <p class="footer-links">
                 <a href="#" class="link-1">Home</a>
 
-                <a href="#">Home</a>
+                <a href="#about">About</a>
 
-                <a href="#">About</a>
+                <a href="#service">Service</a>
 
-                <a href="#">Service</a>
+                <a href="contact.html">Contact</a>
 
-                <a href="#">Contact</a>
-
-                <a href="#">Feedback</a>
+                <a href="#skills">Skills</a>
             </p>
 
-            <p class="footer-company-name">Protfolio © 2022</p>
+            <p class="footer-company-name" style="color:white;">Protfolio © 2022</p>
         </div>
 
         <div class="footer-center">
