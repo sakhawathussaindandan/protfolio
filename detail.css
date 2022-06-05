@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    background-color: rgb(108, 200, 231);
+}
+
+
+.container {
+    /* border            : 1px solid black; */
+    width             : 60vw;
+    height            : 100vh;
+    height            : 50vh;
+    box-shadow        : -11px -5px 42px -6px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: -11px -5px 42px -6px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow   : -11px -5px 42px -6px rgba(0, 0, 0, 0.7);
+    margin            : 100px auto 100px auto;
+    line-height       : 2;
+    background-color  : rgb(255, 253, 253);
+    text-align        : center;
+}
+
+h1 {
+    text-align : center;
+    color      : rgb(218, 51, 51);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    text-align  : center;
+    margin-left : 10px;
+    margin-right: 10px;
+
+
+}
+
+img {
+    width : 20%;
+    height: 30%;
+}
+
+th {
+    font-family: 'Ubuntu', sans-serif;
+}
+td{
+    font-family: 'Josefin Sans', sans-serif;
+}
+table.minimalistBlack {
+    width          : 100%;
+    text-align     : center;
+    border-collapse: collapse;
+}
+
+table.minimalistBlack td,
+table.minimalistBlack th {
+    padding: 1px 0px;
+}
+
+table.minimalistBlack tr:nth-child(even) {
+    background: #D0E4F5;
+}
+
+table.minimalistBlack thead {
+    border-bottom: 2px solid #161313;
+}
+
+table.minimalistBlack thead th {
+    font-size  : 15px;
+    font-weight: bold;
+    color      : #000000;
+    text-align : center;
+}
+
+table.minimalistBlack tfoot {
+    font-size  : 14px;
+    font-weight: bold;
+    color      : #000000;
+    border-top : 2px solid #161313;
+}
+
+table.minimalistBlack tfoot td {
+    font-size: 14px;
+}
+
+table.minimalistBlack tfoot .links {
+    text-align: right;
+}
+
+
+.myButton {
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#2dabf9;
+	border-radius:3px;
+	/* border:1px solid #0b0e07; */
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:15px; 
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+        
+
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        display: none;
+    }
+}
